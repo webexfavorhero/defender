@@ -1,0 +1,647 @@
+@media screen and (min-width:1201px){
+  .f_b,
+  .co_l,
+  .cnm,
+  .mch,
+  .stat,
+  .uss,
+  .use,
+  .scriptgen {
+    font-size:10px;
+  }
+  .sr_nm,
+  .sr_pc,
+  .sr_pd,
+  .sr_buy,
+  .pd_buy,
+  .packages p,
+  .packagelabels p,
+  .pck_btn,
+  .anc,
+  .co_nf,
+  .co_ed,
+  .co_sv,
+  .mil,
+  .msb,
+  .pr_tz,
+  .pr_p,
+  .pr_i,
+  .pr_l,
+  .bulksubmit,
+  .slotSw:after,
+  .slotSw:before,
+  .dt_d,
+  .dt_l,
+  .nt_l,
+  .nts_l,
+  .nt_time,
+  .to_c,
+  .to_l,
+  .status,
+  .dt_a,
+  select,
+  select option,
+  .mi,
+  .confirm,
+  .cancel,
+  .co_nm,
+  .co_em,
+  .co_ph,
+  .pr_rp,
+  .pr_ed {
+    font-size:12px;
+  }
+  .pd_pc,
+  .pd_nm,
+  .package p:first-child,
+  .package p:nth-child(2),
+  .confh,
+  .mh2,
+  .addurl,
+  .buyslot,
+  .buysms,
+  .upgpackage,
+  .packagelabels,
+  .packages,
+  .urlheader,
+  .mm {
+    font-size:14px;
+  }
+  .mh {
+    font-size:16px;
+  }
+  .pd_pc,
+  .pd_nm,
+  .pck_btn,
+  .confh,
+  .newcontact .co_nf,
+  .dt_d,
+  .dt_a,
+  .dt_l,
+  .nt_l,
+  .to_l,
+  .status,
+  .co_l,
+  .to_c,
+  .mm,
+  .mh,
+  .f_b {
+    line-height:1.5;
+  }
+  .sr_nm,
+  .sr_pc,
+  .sr_pd,
+  .pr_rp,
+  .pr_ed,
+  .pr_tz,
+  .pr_p,
+  .pr_l,
+  .pr_i,
+  .anc,
+  .cnm,
+  .co_ed,
+  .co_sv,
+  .co_nm,
+  .co_em,
+  .co_ph,
+  .sr_buy,
+  .pd_buy,
+  .mil,
+  .mi,
+  .smb,
+  .confirm,
+  .cancel,
+  .nts_ln,
+  .urlheader {
+    line-height:2;
+  }
+  .package p:first-child,
+  .package p:nth-child(2) {
+    line-height:2.2;
+  }
+  .mch,
+  .packagelabels,
+  .packages,
+  .stat,
+  .uss,
+  .use,
+  .scriptgen {
+    line-height:2.5;
+  }
+  .bulk {
+    width:270px;
+    height:25px;
+  }
+  .msgw {
+    margin-top:20px;
+    min-width:564px;
+    max-width:564px;
+    min-height:200px;
+    max-height:200px;
+  }
+  .pr_ed {
+    height:26px;
+    right:0;
+    width:142px;
+  }
+  .pr_rp {
+    margin:20px auto;
+  }
+  .pr_rp,
+  .pr_ed,
+  .co_sv {
+    padding:0 15px;
+  }
+  .mch {
+    width:100px;
+  }
+  .mh2 {
+    margin:14px 0 7px 7px;
+  }
+  .pr_box:not(:last-child) {
+    padding-bottom:14px;
+  }
+  .mil {
+    width:100px;
+    padding-right:15px;
+  }
+  .msb {
+    width:80px;
+    padding:0 14px;
+    margin:24px auto 10px;
+  }
+  .confmw {
+    width:300px;
+    top:290px;
+    left:calc(50% - 150px);
+    padding:10px;
+  }
+  .confirm,
+  .cancel {
+    padding:0 10px;
+    margin-top:14px;
+  }
+  .toolbar2 {
+    padding:10px 0;
+    height:45px;
+    margin-bottom:14px;
+  }
+  .urlsection {
+    padding-bottom:50px;
+    min-height:700px;
+  }
+  .tnselect {
+    width:75px;
+    height:25px;
+    margin-left:20px;
+  }
+  .co_nf,
+  .bulkselect,
+  .ntselect {
+    height:25px;
+  }
+  .blabel {
+    left:172px;
+    top:10px;
+  }
+  .tlabel {
+    bottom:9px;
+    right:9px;
+  }
+  .nlabel {
+    bottom:10px;
+    left:226px;
+  }
+  .plabel {
+    bottom:10px;
+    right:10px;
+  }
+  .bulkselect,
+  .ntselect {
+    width:150px;
+  }
+  .selectlabel {
+    width:7px;
+  }
+  .nts_l {
+    margin-top:3px;
+  }
+  .f_icon,
+  .s_icon,
+  .t_icon {
+    margin-top:1px;
+    width:18px;
+  }
+  .f_legend,
+  .s_legend,
+  .t_legend {
+    font-size:16px;
+    padding:0 14px;
+    line-height:1;
+  }
+  .legend {
+    margin-top:5px;
+  }
+  .legend_i{
+    margin-right:7px;
+    width:18px;
+  }
+  .pr_p,
+  .pr_l,
+  .pr_i,
+  .pr_tz {
+    width:142px;
+  }
+  .pfme_row{
+    height:25px;
+  }
+  .prme_row,
+  .pfme_row{
+    width:100%;
+  }
+  .prme_row{
+    height:40px;
+  }
+  .pr_row {
+    width:50%;
+    margin:10px auto;
+  }
+  .pr_p,
+  .pr_l {
+    margin-top:2px;
+  }
+  .pr_l {
+    padding-right:15px;
+  }
+  .tb_box {
+    margin:14px 0;
+    height:53px;
+    padding:10px;
+  }
+  .buyslot,
+  .buysms,
+  .upgpackage {
+    margin-left:14px;
+  }
+  .tb_btn {
+    height:34px;
+  }
+  .buyproducts {
+    margin-left:100px;
+    width:280px;
+  }
+  .addurl {
+    width:85px;
+    margin-right:15px;
+  }
+  .buyslot {
+    width:90px;
+  }
+  .buysms {
+    width:105px;
+  }
+  .upgpackage {
+    width:145px;
+  }
+  .up {
+    width:100%;
+    height:40px;
+  }
+  .sms_s{
+    margin:7px 5px 0 0;
+  }
+  .packagelabels {
+    width:140px;
+  }
+  .packages {
+    width:428px;
+  }
+  .packagelabels p {
+    padding-right:5px;
+  }
+  .package:last-child:first-child {
+    width:100%;
+  }
+  .package:first-child:nth-last-child(2),
+  .package:last-child:nth-child(2) {
+    width:50%;
+  }
+  .package:first-child:nth-last-child(3),
+  .package:nth-last-child(2):nth-child(2),
+  .package:last-child:nth-child(3) {
+    width:33.333333%;
+  }
+  .package:first-child:nth-last-child(4),
+  .package:nth-last-child(2):nth-child(3),
+  .package:nth-last-child(3):nth-child(2),
+  .package:last-child:nth-child(4) {
+    width:25%;
+  }
+  .mwpackages {
+    margin-top:28px;
+  }
+  .mwpackages p {
+    height:31px;
+  }
+  .pck_btn {
+    width:70%;
+    padding: 5px;
+    margin:10px auto;
+  }
+  .toolbar,
+  .toolbar2,
+  .us,
+  .urlheader {
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .urlheader {
+    height:28px;
+    margin-bottom:14px;
+  }
+  .us {
+    margin-bottom:14px;
+  }
+  .usb {
+    height:48px;
+    padding:10px 0 0 10px;
+  }
+  .slider {
+    padding-top:0;
+    height:0;
+  }
+  .slide {
+    width:21px;
+    height:21px;
+    margin:25px auto;
+  }
+  .usi {
+    padding:0;
+  }
+  .statuses {
+    width:261px;
+    margin-left:30px;
+    padding-left:10px;
+  }
+  .trafficscript {
+    width:300px;
+    padding:0 10px;
+  }
+  .contactselect {
+    padding:0 30px;
+  }
+  .remove {
+    height:28px;
+    width:87px;
+  }
+  .statuses,
+  .trafficscript,
+  .contactselect {
+    height:28px;
+  }
+  .bc {
+    height:24px;
+    width:40px;
+  }
+  .cpn {
+    width:260px;
+  }
+  .dt,
+  .contactselect {
+    width:512px;
+  }
+  .to,
+  .nt {
+    width:150px;
+  }
+  .st {
+    width:88px;
+  }
+  .us .bc,
+  .us .cpn,
+  .us .dt,
+  .us .nt,
+  .us .st,
+  .us .to {
+    height:70px;
+  }
+  .us .cpn,
+  .us .dt,
+  .us .nt,
+  .us .st,
+  .us .to {
+    padding:0 10px;
+  }
+  .ust {
+    padding:10px 0;
+  }
+  .cp_main_sw {
+    width:59px;
+    margin-right:10px;
+    top:23px;
+  }
+  .cp_module_sw {
+    width:170px;
+  }
+  .bulk_cb {
+    width:17px;
+    height:17px;
+  }
+  .bulk_cb,
+  .bulkcheck {
+    top:5px;
+    left:10px;
+  }
+  .us .bulk_cb,
+  .us .bulkcheck {
+    top:26px;
+  }
+  .bulkselect {
+    left:40px;
+  }
+  .bulksubmit {
+    left:203px;
+    width:40px;
+    height:25px;
+  }
+  .slotSw {
+    width:59px;
+    height:26px;
+    top:0;
+  }
+  .f_sw,
+  .s_sw,
+  .t_sw {
+    left:26px;
+    margin-top:1px;
+  }
+  .slotSw:after,
+  .slotSw:before {
+    top:7px;
+  }
+  .slotSw:after {
+    right:8px;
+  }
+  .slotSw:before {
+    left:8px;
+  }
+  .slotSw~label {
+    width:20px;
+    height:20px;
+    top:3px;
+    left:3px;
+  }
+  .f_sw~label,
+  .s_sw~label,
+  .t_sw~label {
+    width:12px;
+    height:12px;
+    left:28px;
+  }
+  .f_sw~label {
+    top:3px;
+  }
+  .s_sw~label {
+    top:29px;
+  }
+  .t_sw~label {
+    top:55px;
+  }
+  .f_sw,
+  .s_sw,
+  .t_sw {
+    width:29px;
+    height:16px;
+  }
+  .f_icon,
+  .f_s,
+  .f_sw {
+    top:0;
+  }
+  .s_icon,
+  .s_s,
+  .s_sw {
+    top:26px;
+  }
+  .t_icon,
+  .t_s,
+  .t_sw {
+    top:52px;
+  }
+  .slotSwChk:checked+.slotSw+label {
+    left:36px;
+  }
+  .fSwChk:checked+.f_sw+label,
+  .sSwChk:checked+.s_sw+label,
+  .tSwChk:checked+.t_sw+label {
+    left:41px;
+  }
+  .nt_icon {
+    margin-top:2px;
+    margin-right:2px;
+    height:20px;
+    width:20px;
+  }
+  .ntd {
+    margin-top:4px;
+  }
+  .status{
+    width:105px;
+  }
+  .status,
+  .f_b {
+    right:0;
+    margin-top:1px;
+  }
+  .f_b{
+    top:0;
+    padding:0 5px;
+  }
+  .dt_row {
+    margin-bottom:8px;
+  }
+  .nt_l {
+    width:100%;
+  }
+  .dt_l {
+    margin-left:20px;
+    width:50px;
+  }
+  .ntselect {
+    margin:2px 0 0 14px;
+  }
+  .dt_d {
+    width:401px;
+  }
+  .dt_a {
+    max-width:370px;
+  }
+  .to_row {
+    margin-bottom:5px;
+  }
+  .nt_row {
+    margin-bottom:12px;
+  }
+  .to_c {
+    width:69px;
+  }
+  .nt_time {
+    width:129px;
+    margin-top:16px;
+  }
+  .to_n {
+    padding-top:5px;
+  }
+  .mch,
+  .stat,
+  .msb,
+  .uss,
+  .use,
+  .scriptgen {
+    height:28px;
+  }
+  .scriptgen,
+  .stat {
+    width:130px;
+  }
+  .uss,
+  .use {
+    top:0;
+    right:30px;
+    width:50px;
+  }
+  .usr {
+    width:16px;
+    height:21px;
+    margin-top:4px;
+  }
+  .services,
+  .products {
+    margin-top:14px;
+  }
+  .product,
+  .service {
+    padding:10px;
+  }
+  .product {
+    width:21%;
+    margin:2%;
+  }
+  .pd_buy {
+    width:60px;
+    margin:14px auto;
+  }
+  .service {
+    margin:10px 0;
+  }
+  .sr_nm,
+  .sr_pc,
+  .sr_pd {
+    width:25%;
+  }
+  .sr_buy {
+    width:90px;
+    margin-left:25px;
+  }
+}

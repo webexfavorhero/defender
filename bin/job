@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var debug = require('debug')('job');
+
+var log = require('../td_common/libs/log');
+
+var job = require('../job_worker');
+
+log.info('job started');
+
+

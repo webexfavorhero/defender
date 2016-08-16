@@ -1,0 +1,76 @@
+@media screen and (min-width: 1201px){
+  .cmw {
+    width:21px;
+    right:10px;
+    top:10px;
+  }
+  .mw {
+    position:fixed;
+    left:calc(50% - 300px);
+    width:600px;
+    margin-top:106px;
+    padding:15px;
+  }
+  .mh {
+    font-size:26px;
+    line-height:1.5;
+  }
+  .mi {
+    width:340px;
+  }
+  .me{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .merow{
+    height:20px;
+  }
+  .mirow {
+    height:61px;
+    padding:15px 115px 10px 115px;
+  }
+  .michl,
+  .alabel,
+  .rme,
+  .forgot,
+  .terms{
+    top:23px;
+  }
+  .michl {
+    left:140px;
+    font-size:16px;
+  }
+  .alabel,
+  .rme {
+    width:18px;
+    height:18px;
+    left:115px;
+    border-radius:3px;
+    padding-top: 2px;
+  }
+  .forgot,
+  .terms {
+    font-size:14px;
+  }
+  .forgot {
+    left:255px;
+  }
+  .terms {
+    left:145px;
+  }
+  .m_btn{
+    right:115px;
+  }
+  .c_btn {
+    font-size:16px;
+    padding:0 15px;
+  }
+  .mi,
+  .c_btn {
+    line-height:2;
+    font-size:16px;
+  }
+}
+
+
+

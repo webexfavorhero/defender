@@ -1,0 +1,118 @@
+{
+  "apps" : [{
+    "name"           : "web workers",
+    "script"         : "bin/https",
+    "watch"          : false,
+    "ignore_watch"   : [
+      "node_modules",
+      "logs",
+      "config.json",
+      "docs",
+      "tests",
+      "public"
+    ],
+    "node_args"      : "--harmony",
+    "merge_logs"     : true,
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "autorestart"    : true,
+    "env": {
+      "DEBUG"        : "",
+      "CONFIG"       : "",
+      "SPECIFIC_CODE": ""
+    },
+    "env_development": {
+      "NODE_ENV"     : "development"
+    },
+    "env_production": {
+      "NODE_ENV"     : "production"
+    },
+    "env_tst_development": {
+      "NODE_ENV"     : "development",
+      "DEBUG"        : "cleanmx",
+      "CONFIG"       : "",
+      "SPECIFIC_CODE": ""
+    }
+  }, {
+    "name"           : "job workers",
+    "script"         : "bin/job",
+    "watch"          : false,
+    "ignore_watch"   : [
+      "node_modules",
+      "logs",
+      "config.json",
+      "docs",
+      "tests",
+      "public"
+    ],
+    "node_args"      : "--harmony",
+    "merge_logs"     : true,
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "autorestart"    : true,
+    "env": {
+      "DEBUG"        : "wot,safebrowsing_lookup,monitors",
+      "CONFIG"       : ""
+    },
+    "env_development": {
+      "NODE_ENV"     : "development"
+    },
+    "env_production": {
+      "NODE_ENV"     : "production"
+    },
+    "env_tst_development": {
+      "NODE_ENV"     : "development",
+      "DEBUG"        : "plans",
+      "CONFIG"       : ""
+    }
+  }, {
+    "name"           : "http-to-https redirect",
+    "script"         : "bin/http_to_https",
+    "watch"          : false,
+    "node_args"      : "--harmony",
+    "merge_logs"     : true,
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "autorestart"    : true
+  }, {
+    "name"           : "safebrowsing-go",
+    "script"         : "webserver",
+    "args"           : "config.file",
+    "cwd"            : "/var/www/gocode/bin/",
+    "exec_interpreter": "none",
+    "env" : {
+      "GOPATH": "/var/www/gocode"
+    },
+    "watch"          : false,
+    "merge_logs"     : true,
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "autorestart"    : true
+  }],
+  "deploy" : {
+    "dev_development" : {
+      "user" : "root",
+      "host" : "dev.trdf.co",
+      "ref"  : "origin/master",
+      "repo" : "git@bitbucket.org:alphara/banchecker.git",
+      "path" : "/var/www/www.trafficdefender.net/development",
+      "post-deploy" : "git submodule update --init && npm install && gulp all && pm2 startOrRestart trafficdefender.json --env development",
+      "watch" : false
+    },
+    "dev_production" : {
+      "user" : "root",
+      "host" : "dev.trdf.co",
+      "ref"  : "origin/master",
+      "repo" : "git@bitbucket.org:alphara/banchecker.git",
+      "path" : "/var/www/www.trafficdefender.net/production",
+      "post-deploy" : "git submodule update --init && npm install && gulp all && pm2 startOrRestart trafficdefender.json --env production",
+      "watch" : false
+    },
+    "tst_development" : {
+      "user" : "root",
+      "host" : "tst.trdf.co",
+      "ref"  : "origin/master",
+      "repo" : "git@bitbucket.org:alphara/banchecker.git",
+      "path" : "/var/www/www.trafficdefender.net/tst_development",
+      "post-deploy" : "git submodule update --init && npm install && gulp all && pm2 startOrRestart trafficdefender.json --env tst_development",
+      "watch" : false
+    }
+  }
+}
+

@@ -1,0 +1,183 @@
+{
+  "app": {
+    "site": "https://www.trafficdefender.net",
+    "mongodb": "mongodb://localhost/trafficdefender",
+    "redis": "localhost:6379",
+    "sessionKey": "express.sid",
+    "sessionSecret": "banchecker secret",
+    "wwwRedirect": false
+  },
+  "http": {
+    "port": 80
+  },
+  "https": {
+    "port": 443,
+    "privateKey": "cert/www.trafficdefender.net.key",
+    "certificate": "cert/www.trafficdefender.net.crt",
+    "caCertificate": "cert/rapidssl.crt"
+  },
+  "socket": {
+    "port": 3010
+  },
+  "checker": {
+    "check": true
+  },
+  "notifier": {
+    "emailNotifications": true,
+    "smsNotifications": true,
+    "frequencies": [
+      {
+        "id": 0,
+        "value": "0",
+        "agendaEvery": "1 minutes",
+        "description": "Just once when problem identified"
+      },
+      {
+        "id": 1,
+        "value": "5 minutes",
+        "agendaEvery": "5 minutes",
+        "description": "Every 5 minutes"
+      },
+      {
+        "id": 2,
+        "value": "15 minutes",
+        "agendaEvery": "15 minutes",
+        "description": "Every 15 minutes"
+      },
+      {
+        "id": 3,
+        "value": "30 minutes",
+        "agendaEvery": "30 minutes",
+        "description": "Every 30 minutes"
+      },
+      {
+        "id": 4,
+        "value": "1 hours",
+        "agendaEvery": "1 hours",
+        "description": "Once per hour"
+      }
+    ],
+    "emailFrom": "support@trafficdefender.net",
+    "smsFrom": "+12014794839",
+    "notificationFrequencies": ""
+  },
+  "mail": {
+    "service": "sendgrid"
+  },
+  "nodemailer": {
+    "service": "Mail.Ru",
+    "auth": {
+      "user": "trafficdefender@mail.ru",
+      "pass": "defendertraffic"
+    }
+  },
+  "sendgrid": {
+    "user": "trafficdefender",
+    "key": "VShJ2ByQtyPA"
+  },
+  "twilio": {
+    "accountSid": "AC6418fd49487c3501a9d98797ec15becf",
+    "authToken": "acd562e9d58c8b6753ff818d1ef4a7e0"
+  },
+  "googleApps": [ {
+    "name": "googlechrome",
+    "key": "AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw",
+    "ver": "41.0.2272.89",
+    "pver": "3.1"
+  }, {
+    "name": "googlechrome",
+    "key": "AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw",
+    "ver": "41.0.2272.101",
+    "pver": "3.1"
+  } ],
+  "paypal": {
+    "mode": "live",
+    "sandbox": {
+      "mode": "sandbox",
+      "client_id": "AXrA2W9YWTFT9uKs0rKb_KdN_RCSELCFcqQrgH0_lM9GUbEne2ajdcALpJdHqo6Tc3fR8rcD3ThgS83u",
+      "client_secret": "EPO3XGJZEj29r-7gOSaBO8wQrNTo2xF3wLIoHzECABKw_G6JAbVf19MJM1WYuPgn61eQEtVYlx6z3QEo"
+    },
+    "live": {
+      "mode": "live",
+      "client_id": "Ac2-GchqVrDLkWS9QOWimYrGVWlBOledMWAblZonQ1USN_1t0LkyO9G2OU8-e9xHnybh6DtQtcRJT8kf",
+      "client_secret": "EIjFM3tAtXFd8NpAeI3WkyUARWdOxEtmpxvBGoF36QHug5P9IcoddlaisR0NQOt7EMd2jllC5uYcJC3Q"
+    }
+  },
+  "monitors": {
+    "safebrowsing_lookup": {
+      "id": "safebrowsing_lookup",
+      "name": "Google Safe Browsing Lookup",
+      "enabled": true,
+      "type": "flag"
+    },
+    "servermon": {
+      "id": "servermon",
+      "name": "Server Monitor",
+      "enabled": true,
+      "type": "server"
+    },
+    "trafficmon": {
+      "id": "trafficmon",
+      "name": "Traffic Monitor",
+      "enabled": true,
+      "type": "traffic"
+    },
+    "safebrowsing_go": {
+      "id": "safebrowsing_go",
+      "name": "Google Safe Browsing v.3 (Go)",
+      "enabled": true,
+      "type": "flag",
+      "apiUrl": "http://localhost:3020/"
+    },
+    "phishtank": {
+      "id": "phishtank",
+      "name": "PhishTank (OpenDNS)",
+      "enabled": true,
+      "type": "flag",
+      "databaseUrl": "http://data.phishtank.com/data/79c61d6bb1b4937cfa23e4a73a56fce442f679c96a66e3428fb0785e13de9639/online-valid.json.bz2",
+      "agendaEvery": "1 minutes",
+      "skipCheckForUpdates": false,
+      "skipUpdates": false
+    },
+    "openphish": {
+      "id": "openphish",
+      "name": "OpenPhish",
+      "enabled": true,
+      "type": "flag",
+      "databaseUrl": "https://openphish.com/feed.txt",
+      "agendaEvery": "1 minutes",
+      "skipCheckForUpdates": false,
+      "skipUpdates": false
+    },
+    "cleanmx": {
+      "id": "cleanmx",
+      "name": "Clean MX",
+      "enabled": true,
+      "type": "flag",
+      "phishingDatabaseUrl": "http://support.clean-mx.de/clean-mx/xmlphishing.php?response=alive",
+      "missusedDatabaseUrl": "http://support.clean-mx.de/clean-mx/xmlportals.php",
+      "malwareDatabaseUrl": "http://support.clean-mx.de/clean-mx/xmlviruses.php",
+      "agendaEvery": "5 minutes",
+      "updateEvery": "TODO",
+      "skipCheckForUpdates": true,
+      "skipUpdates": false
+    },
+    "malwaredomainlist": {
+      "id": "malwaredomainlist",
+      "name": "Malware Domain List",
+      "enabled": true,
+      "type": "flag",
+      "databaseUrl": "http://www.malwaredomainlist.com/mdlcsv.php",
+      "agendaEvery": "60 minutes",
+      "skipCheckForUpdates": false,
+      "skipUpdates": false
+    },
+    "wot": {
+      "id": "wot",
+      "name": "WOT - Web Of Trust",
+      "enabled": "true",
+      "type": "flag",
+      "databaseUrl": "http://api.mywot.com/0.4/public_link_json2?key=5e21d3e9a57dd4926909a2c8b39fbaaefece19bc&hosts="
+    }
+  }
+}

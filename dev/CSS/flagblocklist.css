@@ -1,0 +1,56 @@
+.fbl {
+  background: #252525;
+  color:#FFF;
+}
+.fbl,
+.fls{
+  margin-bottom: 14px;
+}
+.fbl,
+.fsn {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.fblsn,
+.fsn {
+  width: 200px;
+}
+.fblbn,
+.fbn{
+  width:175px;
+}
+.fblbs,
+.fbs{
+  width: 65px;
+}
+.fblbd,
+.fbd{
+  width: 125px;
+}
+.fbs{
+  text-transform: uppercase;
+}
+.fbn,
+.fbs,
+.fbd{
+  font-size: 12px;
+  line-height: 1.5;
+}
+.fsbs{
+  width: 368px;
+}
+.fls{
+  border: 1px solid #252525;
+}
+.fsn,
+.fbn,
+.fbs,
+.fbd{
+  padding: 6px;
+}
+.fsbs{
+  border-left: 1px solid #252525;
+}
+.fbg:not(:last-child) {
+  border-bottom: 1px solid #252525;
+}

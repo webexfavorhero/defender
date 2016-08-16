@@ -1,0 +1,129 @@
+#!/usr/bin/env node
+
+var debug = require('debug')('https');
+
+var https = require('https');
+var nconf = require('nconf');
+var fs = require('fs');
+var helmet = require('helmet');
+
+var log = require('../td_common/libs/log');
+
+var webWorker = require('../web_worker');
+var app = webWorker.app;
+
+// Get port from environment and store in Express.
+var port = normalizePort(nconf.get('https:port'));
+log.info('https port: ' + port);
+app.set('port', port);
+
+// Get sertificate and private key from files.
+var privateKeyFile = nconf.get('https:privateKey');
+var certificateFile = nconf.get('https:certificate');
+var caCertificateFile = nconf.get('https:caCertificate');
+
+var credentials = { key: undefined, cert: undefined };
+if (privateKeyFile !== '') {
+  log.info('SSL privateKey: ' + privateKeyFile);
+  credentials.key = fs.readFileSync(privateKeyFile, 'utf8');
+}
+if (certificateFile !== '') {
+  log.info('SSL certificate: ' + certificateFile);
+  credentials.cert = fs.readFileSync(certificateFile, 'utf8');
+}
+if (caCertificateFile !== '') {
+  log.info('SSL caCertificate: ' + caCertificateFile);
+  credentials.ca = fs.readFileSync(caCertificateFile, 'utf8');
+}
+
+// HTTPS security test:
+// https://www.ssllabs.com/ssltest/analyze.html?d=trafficdefender.net
+//
+// for overall rating A
+// https://certsimple.com/blog/a-plus-node-js-ssl
+
+credentials.ciphers = [
+    "ECDHE-RSA-AES256-SHA384",
+    "DHE-RSA-AES256-SHA384",
+    "ECDHE-RSA-AES256-SHA256",
+    "DHE-RSA-AES256-SHA256",
+    "ECDHE-RSA-AES128-SHA256",
+    "DHE-RSA-AES128-SHA256",
+    "HIGH",
+    "DHE",
+    "!aNULL",
+    "!eNULL",
+    "!EXPORT",
+    "!DES",
+    "!RC4",
+    "!MD5",
+    "!PSK",
+    "!SRP",
+    "!CAMELLIA"
+].join(':');
+credentials.honorCipherOrder = true;
+
+var ONE_YEAR = 31536000000;
+app.use(helmet.hsts({
+    maxAge: ONE_YEAR,
+    includeSubdomains: true,
+    force: true
+}));
+
+// Create HTTPS server.
+var server = https.createServer(credentials, app);
+
+webWorker.afterCreateServer(server);
+
+// Listen on provided port, on all network interfaces.
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+// Normalize a port into a number, string, or false.
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+// Event listener for HTTPS server "error" event.
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      log.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      log.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+// Event listener for HTTPS server "listening" event.
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
+  log.info('Listening on ' + bind);
+}
+

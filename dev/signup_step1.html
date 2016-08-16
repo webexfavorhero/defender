@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {{> favicon}}
+  <title>TD | SignUp Page</title>
+  <script src="./_tmp/res.js"></script>
+  <script src="./_tmp/fl2.js"></script>
+  <link rel="stylesheet" href="./_tmp/signup_step1.css">
+</head>
+<body>
+  <svg class="dn">{{> logo_svg}} {{> msg_svg}} {{> cross_svg}}</svg>
+  {{> modal}}
+  <div id="wr" class="wr zi2 cover oh">
+    <section class="top cover zi2 pf">
+      <div class="top full ma">
+        <header class="header pr">
+          <svg class="logo"viewBox="0 0 270 39"preserveAspectRatio="xMinYMin slice">
+            <use xlink:href="#logo_t" />
+          </svg>
+        </header>
+        {{> msg_html}}
+        <nav class="nav-menu ttu">
+          <div class="nav-item tac cp bold"><a href="https://trafficdefender.net/">home</a></div>
+          <div class="nav-item tac cp bold"><a href="https://trafficdefender.net/#pricing">pricing</a></div>
+          <div class="nav-item tac cp bold"><a href="https://trafficdefender.net/#contactus">contact us</a></div>
+          <button class="nav-btn rd tac cp bold" id="login">LogIn</button>
+          <button class="nav-btn rd tac cp bold" id="signup">SignUp</button>
+          <button class="nav-btn rd tac cp bold dn" id="dash">Dashboard</button>
+          <button class="nav-btn rd tac cp bold dn" id="logout">logout</button>
+        </nav>
+      </div>
+    </section>
+    <section class="first last full ma pr">
+      <div class="mainarea">
+        <h1 class="mh tac bold title ttu">SignUp</h1>
+        <form id="sf" method="post" action="/signup/activate">
+          <div class="mirow pr">
+            <input id="email" type="email" name="email" class="mi rd bold" placeholder="Email" required>
+          </div>
+          <div class="mirow pr">
+            <input id="agree" type="checkbox" name="agree" class="agree pa" required>
+            <label id="alabel" for="agree" class="alabel pa">
+              <svg viewBox="0 0 18 14"
+                preserveAspectRatio="xMinYMin slice">
+                <use xlink:href="#check" />
+              </svg>
+            </label>
+            <a class="terms pa bold" href="/tos" target="_blank">Terms and conditions</a>
+            <button class="c_btn m_btn pa rd bold disabled" id="ss" disabled>SignUp</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    {{> footer}}
+  </div>
+  <script src="./_tmp/signup_step1.js"></script>
+  {{> flash_js}}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

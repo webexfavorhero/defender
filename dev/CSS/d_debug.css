@@ -1,0 +1,27 @@
+.modal{
+  position:fixed;
+  bottom:0;
+  left:0;
+  background:#000;
+  background:rgba(0,0,0,0.5);
+}
+.hlb{
+  font-size:12px;
+  margin-right:10px;
+  padding:5px;
+  color:#FFF;
+  background:transparent;
+}
+.easter {
+  position:fixed;
+  bottom:0;
+  right:0;
+  color:transparent;
+  background:transparent;
+  font-size:10px;
+  padding:5px;
+  width:20px;
+  height:20px;
+  text-align: center;
+  border-radius: 50%;
+}

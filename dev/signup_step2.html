@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {{> favicon}}
+  <title>TD | Signup Second step</title>
+  <script src="./_tmp/res.js"></script>
+  <script src="./_tmp/fl2.js"></script>
+  <link rel="stylesheet" href="./_tmp/signup_step2.css">
+</head>
+<body>
+  <svg class="dn">{{> logo_svg}} {{> msg_svg}} {{> cross_svg}}</svg>
+  {{> modal}}
+  <div id="wr" class="wr zi2 cover oh">
+    <section class="top cover zi2 pf">
+      <div class="top full ma">
+        <header class="header pr">
+          <svg class="logo"viewBox="0 0 270 39"preserveAspectRatio="xMinYMin slice">
+            <use xlink:href="#logo_t" />
+          </svg>
+        </header>
+        {{> msg_html}}
+        <nav class="nav-menu ttu">
+          <div class="nav-item tac cp bold"><a href="https://trafficdefender.net/">home</a></div>
+          <div class="nav-item tac cp bold"><a href="https://trafficdefender.net/#pricing">pricing</a></div>
+          <div class="nav-item tac cp bold"><a href="https://trafficdefender.net/#contactus">contact us</a></div>
+          <button class="nav-btn rd tac cp bold" id="login">LogIn</button>
+          <button class="nav-btn rd tac cp bold" id="signup">SignUp</button>
+          <button class="nav-btn rd tac cp bold dn" id="dash">Dashboard</button>
+          <button class="nav-btn rd tac cp bold dn" id="logout">logout</button>
+        </nav>
+      </div>
+    </section>
+    <section class="first last full ma pr">
+      <div class="mainarea">
+        <h1 class="mh tac bold title ttu">SignUp second step</h2>
+        <form action="/signup" method="post" id="fs">
+          <div class="mirow pr">
+            <input id="email" class="mi rd bold" type="email" name="email" value="{{email}}" readonly /><br/>
+          </div>
+          <div class="merow pr">
+            <p class="orange tac dn" id="s2me"></p>
+          </div>
+          <div class="mirow pr">
+            <input id="username" class="mi rd bold" type="text" name="username" placeholder="Username" required/><br/>
+          </div>
+          <div class="mirow pr">
+            <input id="pw" class="mi rd bold" type="password" name="password" placeholder="Password" required/><br/>
+          </div>
+          <div class="mirow pr">
+            <input id="pw2" class="mi rd bold" type="password" placeholder="Confirm Password" required>
+          </div>
+          <div class="mirow pr">
+            <input id="ph" class="mi rd bold" type="phone" name="phone" placeholder="Phone +XXXXXXXXXX (field is not required)">
+          </div>
+          <div class="mirow pr" id="timezone">
+            <label for="tz" class="tzl">Timezone</label>
+            <select id="tz" class="mi bold tz" name="timezone">
+              {{#timezones}}
+              <option value="{{.}}">{{.}}</option>
+              {{/timezones}}
+            </select>
+            <div class="selectlabel tzsel pa zi1">
+              <svg viewBox="0 0 9 6"preserveAspectRatio="xMinYMin slice">
+                <use xlink:href="#s_arr"/>
+              </svg>
+            </div>
+          </div>
+          <div id="packages" class="mwpackages group">
+            <div class="packagelabels bold fl">
+              <p class="tar">Package</p>
+              <p class="tar">Price</p>
+              <p class="tar">Slots</p>
+              <p class="cfl tar">Flag Monitor</p>
+              <p class="csr tar">Srever Monitor</p>
+              <p class="ctr tar">Traffic Monitor</p>
+              <p class="tar">Checking Frequency</p>
+              <p class="tar">SMS included</p>
+              <p class="tar">Extra slots</p>
+            </div>
+              {{#packages}}
+              <div class="package fl {{nm}}" id="package">
+                <p class="bold tac {{nm}}_pnm">{{nm}}</p>
+                <p class="bold tac {{nm}}_ppc">{{pc}}$</p>
+                <p class="bold tac">{{sl}}</p>
+                <p class="cfl bold tac">{{fln}}</p>
+                <p class="csr bold tac">{{srn}}</p>
+                <p class="ctr bold tac">{{trn}}</p>
+                <p class="bold tac">{{cf}}</p>
+                <p class="bold tac">{{sm}}</p>
+                <p class="bold tac">{{sp}}$</p>
+                <input class="radio" id="{{id}}" type="radio" name="package" value="{{id}}"/><label class="radiolabel tac rd bold db ttu" for="{{id}}">choose package</label>
+              </div>
+              {{/packages}}
+          </div>
+          <div class="mirow pr">
+            <Button id="su" class="c_btn ma db rd bold disabled" disabled/>SignUp</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    {{> footer}}
+  </div>
+<script src="./_tmp/signup_step2.js"></script>
+{{> flash_js}}
+</body>
+</html>

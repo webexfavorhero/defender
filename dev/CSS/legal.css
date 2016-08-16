@@ -1,0 +1,36 @@
+.mainul>li,
+.innerol {
+  list-style-type: decimal;
+}
+.inner h2,
+.mainul li {
+  font-size: 24px;
+}
+.mainul {
+  width: 75%;
+  margin: 0 auto;
+}
+.innerul li {
+  list-style-type: none;
+  margin: 1em 2em;
+}
+.sep,
+.innerol li {
+  font-size: 16px;
+}
+.inner h2 {
+  margin: 20px 0 10px 10px;
+}
+.inner p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+}
+.modified {
+  margin-bottom: 50px;
+}
+.sep {
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 30px 0 30px 2em;
+}

@@ -1,0 +1,140 @@
+{
+  "plans": {
+    "free": {
+      "id": "free",
+      "name": "Free",
+      "price": 0,
+      "trialPrice": 0,
+      "slots": 0,
+      "flag": false,
+      "server": false,
+      "traffic": false,
+      "checkFrequency": "0",
+      "slotPrice": 0,
+      "smsOnStart": 0,
+      "period": "1 days",
+      "trialPeriod": false,
+      "hidden": true
+    },
+    "beta-standard-0.1": {
+      "id": "beta-standard-0.1",
+      "name": "Free Beta Standard",
+      "price": 0,
+      "trialPrice": 0,
+      "slots": 10,
+      "flag": true,
+      "server": true,
+      "traffic": true,
+      "checkFrequency": "2 minutes",
+      "slotPrice": 9.99,
+      "smsOnStart": 10,
+      "period": "1 months",
+      "trialPeriod": false,
+      "hidden": false
+    },
+    "starter-0.1": {
+      "id": "starter-0.1",
+      "name": "Starter",
+      "price": 19.99,
+      "trialPrice": 1.00,
+      "slots": 5,
+      "flag": false,
+      "server": true,
+      "traffic": true,
+      "checkFrequency": "5 minutes",
+      "slotPrice": 9.99,
+      "smsOnStart": 10,
+      "period": "1 months",
+      "trialPeriod": "3 days",
+      "hidden": false
+    },
+    "standard-0.1": {
+      "id": "standard-0.1",
+      "name": "Standard",
+      "price": 99.99,
+      "trialPrice": 1.00,
+      "slots": 10,
+      "flag": true,
+      "server": true,
+      "traffic": true,
+      "checkFrequency": "2 minutes",
+      "slotPrice": 9.99,
+      "smsOnStart": 10,
+      "period": "1 months",
+      "trialPeriod": "3 days",
+      "hidden": false
+    },
+    "pro-0.1": {
+      "id": "pro-0.1",
+      "name": "Pro",
+      "price": 149.99,
+      "trialPrice": 1.00,
+      "slots": 20,
+      "flag": true,
+      "server": true,
+      "traffic": true,
+      "checkFrequency": "1 minutes",
+      "slotPrice": 9.99,
+      "smsOnStart": 10,
+      "period": "1 months",
+      "trialPeriod": "3 days",
+      "hidden": false
+    }
+  },
+  "services": {
+    "extraSlot1-0.1": {
+      "id": "extraSlot1-0.1",
+      "type": "extraSlots",
+      "name": "1 Extra Slot",
+      "price": 9.99,
+      "count": 1,
+      "period": "1 months",
+      "css": "extraSlot1",
+      "justForPlans": null
+    },
+    "extraSlot5-0.1": {
+      "id": "extraSlot5-0.1",
+      "type": "extraSlots",
+      "name": "5 Extra Slots",
+      "price": 49.95,
+      "count": 5,
+      "period": "1 months",
+      "css": "extraSlot5",
+      "justForPlans": ["starter-0.1", "standard-0.1", "pro-0.1"]
+    }
+  },
+  "products": {
+    "sms20-0.1": {
+      "id": "sms20-0.1",
+      "type": "sms",
+      "name": "20 SMS",
+      "sms": 20,
+      "css": "sms20",
+      "price": 10.00
+    },
+    "sms50-0.1": {
+      "id": "sms50-0.1",
+      "type": "sms",
+      "name": "50 SMS",
+      "sms": 50,
+      "css": "sms50",
+      "price": 23.00
+    },
+    "sms100-0.1": {
+      "id": "sms100-0.1",
+      "type": "sms",
+      "name": "100 SMS",
+      "sms": 100,
+      "css": "sms100",
+      "price": 43.00
+    },
+    "sms200-0.1": {
+      "id": "sms200-0.1",
+      "type": "sms",
+      "name": "200 SMS",
+      "sms": 200,
+      "css": "sms200",
+      "price": 80.00
+    }
+  }
+}

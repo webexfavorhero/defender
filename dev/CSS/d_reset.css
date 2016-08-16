@@ -1,0 +1,160 @@
+a,
+article,
+aside,
+body,
+button,
+select,
+option,
+div,
+em,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+label,
+li,
+nav,
+p,
+section,
+span,
+ul,
+input,
+svg {
+  font:inherit;
+  font-size:100%;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+  border:0;
+}
+span,
+button,
+select,
+option,
+div,
+input[type='checkbox'],
+img,
+svg,
+a,
+h1,
+h2,
+h3,
+nav,
+li,
+p {
+  user-select:none;
+}
+html {
+  font-family:lato, Arial, sans-serif;
+  font-size:16px;
+  color:#717171;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+html,
+body {
+  min-height:100%;
+}
+body {
+  position:relative;
+}
+a {
+  white-space:nowrap;
+  text-decoration:none;
+  word-wrap:normal;
+  color:inherit;
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+a:focus {
+  outline:0;
+}
+input {
+  text-indent:10px;
+}
+select,
+select option {
+  text-indent:5px;
+  appearance:none;
+}
+select[multiple] {
+  padding-right:23px;
+}
+/* Safari hack */
+_::-webkit-full-page-media, _:future, :root select[multiple],
+_::-webkit-full-page-media, _:future, :root   select[multiple] option {
+  padding:5px 23px 5px 5px;
+}
+/* end of Safari hack */
+select[multiple]:focus {
+  height:auto;
+}
+select[multiple] option {
+  font-weight:700;
+  padding:5px 0;
+  border-right:1px solid #bbb;
+}
+select[multiple] option {
+  border-bottom:1px solid #bbb;
+}
+select[multiple] option:last-child:nth-child(4) {
+  border-bottom:none;
+}
+::-webkit-input-placeholder {
+  color:#8c8c8c;
+}
+:-moz-placeholder {
+  opacity:1;
+  color:#8c8c8c;
+}
+::-moz-placeholder {
+  opacity:1;
+  color:#8c8c8c;
+}
+:-ms-input-placeholder {
+  color:#8c8c8c;
+}
+select::-ms-expand {
+  display:none;
+}
+p,
+span,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  cursor:default;
+}
+input[type=checkbox] {
+  visibility:hidden;
+}
+button,
+label{
+  cursor:pointer;
+}
+button {
+  display:block;
+  text-transform:uppercase;
+  text-align:center;
+  background:transparent;
+  border:none;
+}
+svg {
+  width:100%;
+  pointer-events:none;
+  display:block;
+}

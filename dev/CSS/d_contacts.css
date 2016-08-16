@@ -1,0 +1,40 @@
+input[readonly] {
+  cursor:default;
+  color:#252525;
+  border-color:transparent;
+}
+.cnm {
+  background:#FFF;
+}
+.cnm.active {
+  border:2px solid #48b6dd;
+}
+.btn_r {
+  color:#000;
+}
+.c_arrow{
+  color:#0fb3e1;
+}
+.c_arrow:hover{
+  color:#62c8e6;
+}
+.test,
+.test_i {
+  color:#39b0d4;
+}
+.test:hover,
+.test_i:hover+.test,
+.test_i:hover {
+  color:#62c8e6;
+}
+.co_l,
+.co_ed,
+.co_sv {
+  color:#FFF;
+}
+.co_rm{
+  color:#7F7F7F;
+}
+.co_rm:hover{
+  color:#df3b30;
+}

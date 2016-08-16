@@ -1,0 +1,1 @@
+(function(f,W){W.setTimeout=f(W.setTimeout);W.setInterval=f(W.setInterval);})(function(f){return function(c,t){return f(function(){c.apply(this,[].slice.call(arguments,2))},t)}},window);

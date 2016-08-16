@@ -1,0 +1,267 @@
+.gsp,
+.mch,
+.stat,
+.uss,
+.use,
+.scriptgen,
+.slotSw:after,
+.slotSw:before,
+.bulksubmit,
+.pck_btn,
+.tb_btn,
+.btn,
+.urlheader,
+.pr_rp,
+.pr_ed,
+.co_sv {
+  color:#FFF;
+}
+.us,
+.tb_box,
+.co_nf,
+.bulkselect,
+.ntselect,
+.confmw,
+.toolbar2 {
+  background:#FFF;
+}
+.urlheader {
+  background:#252525;
+}
+.selectlabel,
+.fade,
+select[multiple]:not(:focus) option {
+  pointer-events:none;
+  overflow:hidden;
+}
+.selectlabel {
+  color:#919191;
+}
+select[multiple]:focus {
+  position:relative;
+}
+.slotSw:after,
+.slotSw:before {
+  position:absolute;
+}
+.co_nm,
+.co_em,
+.co_ph,
+.pr_tz,
+.pr_i {
+  border:1px solid #ebebeb;
+}
+.pr_box:not(:last-child) {
+  border-bottom:1px solid #BBB;
+}
+.to_c.disabled,
+.status.disabled {
+  color:#c6c6c6;
+}
+.bulkcheck+.bulk_cb {
+  border:1px solid #BBB;
+  border-radius:3px;
+}
+.confmw {
+  color:#e84237;
+  border:1px solid;
+}
+.confh {
+  word-break:break-all;
+}
+.co_nf,
+.bulkselect,
+.ntselect,
+.tnselect {
+  border:1px solid #ECECEC;
+}
+.f_legend,
+.s_legend,
+.t_legend {
+  color:#B2B2B2;
+}
+
+.packagelabels p,
+.packages p {
+  border-bottom:1px solid #EBEBEB;
+}
+.packagelabels,
+.package {
+  border:1px solid transparent;
+  border-radius:10px 10px 0 0;
+}
+.cfl {
+  background:#fffeef;
+}
+.csr {
+  background:#f7ffeb;
+}
+.ctr {
+  background:#f2fcff;
+}
+.starter:hover {
+  border-color:#7accc8;
+}
+.starter:hover>.pck_btn {
+  background:#7accc8;
+}
+.standard:hover {
+  border-color:#f26925;
+}
+.standard:hover>.pck_btn {
+  background:#f26925;
+}
+.pro:hover {
+  border-color:#8560a8;
+}
+.pro:hover>.pck_btn {
+  background:#8560a8;
+}
+.starter p:first-child,
+.starter p:nth-child(2) {
+  color:#7accc8;
+}
+.standard p:first-child,
+.standard p:nth-child(2) {
+  color:#f26925;
+}
+.pro p:first-child,
+.pro p:nth-child(2) {
+  color:#8560a8;
+}
+.usb {
+  border-top:1px solid #e7e7e7;
+  transition-property:height, padding;
+  transition-duration:.2s;
+  transition-timing-function:linear;
+}
+.slider {
+  border:none;
+}
+.slide {
+  color:#7F7F7F;
+}
+.slide:hover {
+  color:#39b0d4;
+}
+.statuses,
+.trafficscript,
+.contactselect {
+  border-right:1px solid #BBB;
+}
+.statuses {
+  border-left:1px solid #BBB;
+}
+.us .cpn,
+.us .dt,
+.us .nt,
+.us .st,
+.us .to {
+  border-left:1px solid #CCC;
+}
+.slotSw:after,
+.slotSw:before {
+  font-weight:700;
+  text-shadow:1px 1px 0 rgba(255, 255, 255, .15);
+}
+.slotSw:after {
+  content:'OFF';
+}
+.slotSw:before {
+  content:'';
+}
+.slotSwChk:checked+.slotSw:before {
+  content:'ON';
+}
+.slotSwChk:checked+.slotSw:after {
+  content:'';
+}
+.f_sw~label,
+.s_sw~label,
+.slotSw~label,
+.t_sw~label {
+  transition:all .4s ease;
+}
+.nt_icon {
+  background-position:center center;
+}
+.nt_empty {
+  width:0!important;
+  height:0!important;
+}
+.f_sw_chk:checked+.f_sw,
+.s_sw_chk:checked+.s_sw,
+.t_sw_chk:checked+.t_sw {
+  background:#109547;
+}
+.f_sw_chk:not(:checked)+.f_sw,
+.s_sw_chk:not(:checked)+.s_sw,
+.t_sw_chk:not(:checked)+.t_sw {
+  background:#9d0a0e;
+}
+.tSwChk:checked~.t_icon,
+.sSwChk:checked~.s_icon,
+.fSwChk:checked~.f_icon {
+  color:#5cc741;
+}
+.tSwChk:not(:checked)~.t_icon,
+.sSwChk:not(:checked)~.s_icon,
+.fSwChk:not(:checked)~.f_icon {
+  color:#df3b30;
+}
+.tSwChk[disabled]:checked~.t_icon,
+.tSwChk[disabled]:not(:checked)~.t_icon,
+.sSwChk[disabled]:checked~.s_icon,
+.sSwChk[disabled]:not(:checked)~.s_icon,
+.fSwChk[disabled]:checked~.f_icon,
+.fSwChk[disabled]:not(:checked)~.f_icon {
+  color:#B2B2B2;
+}
+.Yes,
+.to_c,
+.s_ok {
+  color:#5cc741;
+}
+.No,
+.s_false {
+  color:#E3262E;
+}
+.Yes,
+.No {
+  padding: 8px calc(50% - 11px);
+}
+.dt_a,
+.dt_l,
+.nt_l,
+.nts_l,
+.to_l {
+  color:#999;
+}
+.slider .ntselect {
+  visibility:hidden;
+}
+.ntselect {
+  will-change:scroll-position;
+}
+.nt_time,
+.dt_d {
+  color:#000;
+}
+.product,
+.service {
+  border:1px solid #eee;
+}
+.service:nth-child(2n+1),
+.product:nth-child(2n+1) {
+  background:#EFEFEF;
+}
+.service:nth-child(2n+2),
+.product:nth-child(2n+2) {
+  color:#EFEFEF;
+}
+.usr{
+  color:#7F7F7F;
+}
+.usr:hover{
+  color:#df3b30;
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-bold.eot'),
+         url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-bold.woff2') format('woff2'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#latobold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-light.eot'),
+         url('../fonts/lato-light.eot?#iefix') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-light.woff2') format('woff2'),
+         url('../fonts/lato-light.woff') format('woff'),
+         url('../fonts/lato-light.ttf') format('truetype'),
+         url('../fonts/lato-light.svg#latolight') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-bold.eot'),
+         url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-bold.woff2') format('woff2'),
+         url('../fonts/raleway-bold.woff') format('woff'),
+         url('../fonts/raleway-bold.ttf') format('truetype'),
+         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}

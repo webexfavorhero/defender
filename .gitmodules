@@ -1,0 +1,3 @@
+[submodule "td_common"]
+	path = td_common
+	url = git@bitbucket.org:alphara/td_common.git

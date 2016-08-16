@@ -1,0 +1,68 @@
+.scroll {
+  overflow-y:scroll!important;
+  will-change:transform;
+}
+.mms {
+  border:1px solid transparent;
+}
+.mmb,
+.camm,
+.m_cross:hover,
+.mmw,
+.mmwh{
+  color:#FFF;
+}
+.mmb {
+  border:1px solid #FFF;
+  background:transparent;
+}
+.mmb:focus {
+  box-shadow:none;
+}
+.mmb:hover {
+  color:#252525;
+  background:#FFF;
+}
+.mmb:active {
+  text-shadow:1px 1px 0 rgba(150, 150, 150, 0.5);
+  box-shadow:0 1px 7px 0 rgba(0, 0, 0, 0.5)inset;
+}
+.camm:hover {
+  color:#e84237;
+}
+.m_cross {
+  color:#7F7F7F;
+}
+.mmw {
+  background-color:#252525!important;
+}
+.mm {
+  text-overflow:ellipsis;
+  vertical-align:middle;
+  white-space:pre-line;
+  white-space:-pre-wrap;
+  white-space:-o-pre-wrap;
+  white-space:-moz-pre-wrap;
+  word-wrap:break-word;
+}
+.mma{
+  white-space:normal;
+}
+.m_err {
+  border:1px solid #e84237;
+}
+.m_wrn {
+  border:1px solid #f26925;
+}
+.m_inf {
+  border:1px solid #62c8e6;
+}
+.m_log {
+  border:1px solid #6ad44e;
+}
+.mm a {
+  color:#62c8e6;
+}
+.mm a:hover {
+  border-bottom:1px solid #62c8e6;
+}

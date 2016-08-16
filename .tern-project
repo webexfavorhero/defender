@@ -1,0 +1,12 @@
+{
+  "libs": [
+    "lodash"
+  ],
+  "loadEagerly": [
+    "libs/*.js"
+  ],
+  "plugins": {
+    "node": {},
+    "node-express": {}
+  }
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {{> favicon}}
+  <title>TD | Login Page</title>
+  <script src="./_tmp/res.js"></script>
+  <script src="./_tmp/fl2.js"></script>
+  <link rel="stylesheet" href="./_tmp/login.css">
+</head>
+<body>
+  <svg class="dn">{{> logo_svg}} {{> msg_svg}} {{> cross_svg}}</svg>
+  {{> modal}}
+  <div id="wr" class="wr zi2 cover oh">
+    <section class="top cover zi2 pf">
+      <div class="top full ma">
+        <header class="header pr">
+          <svg class="logo"viewBox="0 0 270 39"preserveAspectRatio="xMinYMin slice">
+            <use xlink:href="#logo_t" />
+          </svg>
+        </header>
+        {{> msg_html}}
+        <nav class="nav-menu ttu">
+          <div class="nav-item tac cp bold"><a href="https://trafficdefender.net/">home</a></div>
+          <div class="nav-item tac cp bold"><a href="https://trafficdefender.net/#pricing">pricing</a></div>
+          <div class="nav-item tac cp bold"><a href="https://trafficdefender.net/#contactus">contact us</a></div>
+          <button class="nav-btn rd tac cp bold" id="login">LogIn</button>
+          <button class="nav-btn rd tac cp bold" id="signup">SignUp</button>
+          <button class="nav-btn rd tac cp bold dn" id="dash">Dashboard</button>
+          <button class="nav-btn rd tac cp bold dn" id="logout">logout</button>
+        </nav>
+      </div>
+    </section>
+    <section class="first last full ma pr">
+      <div class="mainarea">
+        <h1 class="mh bold title tac">Login</h1>
+        <form id="loginform" method="post" action="/login">
+          <div class="mirow pr">
+            <input id="email" type="email" name="email" class="mi rd bold" placeholder="Email">
+          </div>
+          <div class="merow">
+            <p class="me orange bold tac dn" id="me"></p>
+          </div>
+          <div class="mirow pr">
+            <input id="pass" type="password" name="password" placeholder="Password" class="mi rd bold">
+          </div>
+          <div class="mirow pr">
+            <input id="rememberme" type="checkbox" name="rememberme" class="rememberme pa"/>
+            <label for="rememberme" class="rme pa">
+              <svg viewBox="0 0 18 14"
+                preserveAspectRatio="xMinYMin slice">
+                <use xlink:href="#check" />
+              </svg>
+            </label>
+            <label for="rememberme" class="michl pa">Remember me</label>
+            <a href="/forgot" class="forgot pa bold">Forgot password?</a>
+            <button class="c_btn m_btn pa rd bold disabled" id="ls" disabled>Login</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    {{> footer}}
+  </div>
+  <script src="./_tmp/login.js"></script>
+  {{> flash_js}}
+</body>
+</html>
